@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+    width:300px;
+    background-color:#000;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    padding:10px;
+}
+.sidebar-nav{
+    background-color: rgb(39, 38, 38);
+    border-radius:10px;
+    padding:20px,10px;
+    margin-bottom:10px;
+
+}
+.sidebar-nav .logo{
+    width:120px;
+}
+.sidebar-nav .logo img{
+    width:100%;
+}
+.sidebar-nav ul {
+    list-style:none;
+}
+.sidebar-nav ul li{
+    padding:10px 20px;
+}
+.sidebar-nav ul li a{
+    text-decoration:none;
+    color:aliceblue;
+    font-size: 16px;
+    font-weight:600;
+
+}
+.sidebar-nav  ul  li  a i{
+    
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.library:after{
+    content:'+';
+    float:right;
+    text-align:center;
+    font-size:15px;
+}
+.create-playlist{
+    background:rgb(99, 97, 97);
+    padding:30px 15px;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+.sidebar-scroll{
+    height:120px;
+    overflow-y:auto;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width:10px;
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+    width:5px;
+}
+.create-playlist h4{
+    color:#fff;
+    font-size:15px;
+}
+.create-playlist p{
+    color:#fff;
+    font-size:12px;
+    margin:12px 0;
+}
+.create-playlist button{
+    padding:8px 15px;
+    border:0;
+    outline:0;
+    border-radius:20px;
+    font-weight:600;
+    margin-bottom:10px;
+
+}
+.privacy  ul li a{
+    text-decoration: none;
+    color:#a19b9b;
+    font-size:12px;
+    font-weight: 600;
+    margin:0 6px;
+
+}
+.privacy  ul li a:hover{
+    text-decoration: underline;
+    color:aliceblue;
+}
+.privacy  ul{
+    list-style:none;
+    margin-top:10px;
+}
+
+.privacy  ul li {
+    padding:0 12px;
+    padding-bottom:8px;
+    
+}
+.eng-btn{
+    padding:20px 30px;
+
+}
+.eng-btn button{
+    padding:10px 30px;
+    background: transparent;
+    border:0;
+    outline:none;
+    color:aliceblue;
+    border:1px solid gray;
+    border-radius:20px;
+    margin: 10px 0;
+}
+.eng-btn button:hover{
+    padding:11px 31px;
+    border:1px solid aliceblue;
+}
+/* ...Main section... */
+
+.main-section{
+    margin-top:10px;
+    margin-left:300px;
+    background: #181818;
+    height:100vh;
+    overflow-y: auto;
+    margin-bottom: 80px;
+}
+.main-section::-webkit-scrollbar{
+    background: transparent;
+}
+.main-section::-webkit-scrollbar-thumb{
+    background: transparent;
+    width:10px;
+}
+.main-section:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+    width:5px;
+}
+.main-section .top-nav {
+    padding: 10px 10px;
+    background: #2e2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prev-btn {
+    display: flex;
+    align-items: center;
+}
+
+
+.main-section .nav-search{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #2e2d2d;
+    color:#838181;
+    border-radius:20px;
+    width:300px;
+    height:40px;
+}
+.main-section .search-input{
+    width:100%;
+    font-size:1rem;
+    border:1px solid;
+    border-radius:50px;
+    background: #575555;
+    height:40px;
+    padding:10px;
+}
+.nav-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 20px;
+    background: #575555;
+    height: 40px;
+    padding: 10px 40px; 
+}
+.search-icon {
+    position: absolute;
+    right: 10px; 
+    color: #838181;
+    font-size: 20px;
+    
+}
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-section .top-nav button {
+    background: transparent;
+    border:0;
+    outline: 0;
+}
+.main-section .top-nav .prev-btn button {
+    color:aliceblue;
+    font-size: 22px;
+    margin:20px;
+}
+.top-nav .login-btn .sign-up{
+    color:#838181;
+    font-size:16px;
+    font-weight: 600;
+}
+.top-nav .login-btn .sign-up:hover{
+    color:aliceblue;
+    font-size:18px;
+    font-weight: 600;
+}
+.top-nav .login-btn .premium{
+    color:#838181;
+    font-size:16px;
+    font-weight: 600;
+    padding:5px;
+}
+.top-nav .login-btn .premium:hover{
+    color:aliceblue;
+    font-size:16px;
+    font-weight: 600;
+    padding:5px;
+}
+.top-nav .login-btn .seprator{
+    color:#838181;
+    font-size:16px;
+    font-weight: 600;
+    padding:5px;
+}
+.top-nav .login-btn .download{
+    color:#838181;
+    font-size:16px;
+    font-weight: 600;
+    padding:10px;
+}
+.top-nav .login-btn .download:hover{
+    color:aliceblue;
+    font-size:18px;
+    font-weight: 600;
+}
+.top-nav .login-btn .login {
+    color: #131212;
+    font-size: 16px;
+    font-weight: 600;
+    background: aliceblue;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.spotify-playlist{
+    padding:20px 40px;
+}
+.spotify-playlist h2{
+    color:aliceblue;
+    font-size:22px;
+    margin-bottom:20px;
+}
+.spotify-playlist .card{
+    display: flex;
+    overflow:hidden;
+    gap:20px;
+}
+.spotify-playlist .card .item{
+    width:160px;
+    min-width:140px;
+    background-color: #181818;
+    cursor:pointer;
+    border-radius: 6px;
+    padding:15px;
+}
+.spotify-playlist .card .item:hover{
+    background-color:#3d3c3c;
+}
+.spotify-playlist .card .item img{
+    width:100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.spotify-playlist .card .item-a img{
+    width:100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.spotify-playlist .item-a h4 {
+    color:aliceblue;
+}
+.spotify-playlist .item-a p {
+    color:rgb(185, 186, 187);
+    font-size: 13px;
+}
+.spotify-playlist .card .item-a:hover{
+    background-color:#3d3c3c;
+}
+.spotify-playlist .card .item-a{
+    width:160px;
+    min-width:140px;
+    background-color: #181818;
+    cursor:pointer;
+    border-radius: 6px;
+    padding:15px;
+}
+.spotify-playlist .item h4 {
+    color:aliceblue;
+}
+.spotify-playlist .item p {
+    color:rgb(185, 186, 187);
+    font-size: 13px;
+}
+.spotify-playlist .item p:hover {
+    text-decoration: underline;
+}
+.spotify-playlist .play-btn{
+    position:relative;
+}
+.spotify-playlist .play-btn i{
+    position:absolute;
+    background: rgb(39, 180, 39);
+    border-radius: 50%;
+    padding:12px;
+    top:-40px;
+    right:10px;
+    opacity:0;
+    transform: 0.3s ease all;
+}
+.spotify-playlist .card .item:hover .play-btn i{
+    opacity:1;
+    transform: translateY(-20px);
+}
+.spotify-playlist .card .item-a:hover .play-btn i{
+    opacity:1;
+    transform: translateY(-20px);
+}
+
+/* ...Footer section... */
+.footer-section{
+    padding :20px 40px;
+}
+.footer-section .footer{
+    display:flex;
+    justify-content:space-between ;
+    margin-top:40px;
+}
+.footer-section .footer .footer-link{
+    display:flex;
+    justify-content:space-between ;
+    gap:50px;
+}
+.footer-section .footer .footer-link .footer-column{
+    margin :0px 12px;
+}
+.footer-section .footer .footer-link .footer-column div{
+    color:aliceblue;
+    font-weight:600px;
+    margin-bottom:12px;
+    font-size:16px;
+}
+.footer-section .footer .footer-link .footer-column ul li{
+   list-style:none;
+   margin:6px 0px;
+
+}
+.footer-section .footer .footer-link .footer-column ul li a{
+    text-decoration: none;
+    color:#969393;
+    font-size:14px;
+    cursor:pointer;
+ 
+ }
+ .footer-section .footer .footer-link .footer-column ul li a:hover{
+    text-decoration: underline;
+    color:aliceblue;
+ }
+ .footer .social-link i{
+    color:aliceblue;
+    background: #353434;
+    padding:12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor:pointer;
+ }
+ .footer .social-link i:hover{
+    background: #636262;
+ }
+ hr{
+    margin:20px 40px;
+    border:0;
+    outline:0;
+    border:1px solid grey;
+    margin-top:40px;
+ }
+ .copy-right{
+    padding:0px 40px;
+    color:#939696;
+    font-size:15px;
+    margin-bottom:30px;
+ }
+ .preview{
+    display:flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,#ae2896,#509bf5);
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:12px 40px;
+ }
+ .preview h4{
+    font-size:13px;
+    font-weight:600px;
+    margin-bottom:10px;
+    color:aliceblue;
+ }
+ .preview p{
+    font-size:16px;
+    font-weight:400px;
+    color:aliceblue;
+ }
+ .preview button{
+    padding:12px 30px;
+    border:0;
+    outline:0;
+    border-radius: 20px;
+    font-size:14px;
+    font-weight:600;
+    color:black;
+ }

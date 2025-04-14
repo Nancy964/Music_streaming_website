@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>spotify</title>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-nav">
+            <div class="logo">
+                <img src="logo-new.png" alt="spotify logo">
+            </div>
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span>Search</span>
+                </a></li>
+                
+            </ul>
+        </div>
+        <div class="sidebar-nav box2 ">
+            
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-book"></i></span>
+                        <span class="library">Your library</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="sidebar-scroll">
+                        <div class="create-playlist">
+                            <h4>Create your first playlist</h4>
+                            <p>It's eassy we will help you</p>
+                            <button>create playlist</button>
+                        </div>
+                        <div class="create-playlist">
+                            <h4>Let's find out some podcasts to follow</h4>
+                            <p>We w'll keep you updated on new episodes</p>
+                            <button>Browse podcasts</button>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="privacy">
+                <ul>
+                    <li>
+                        <a href="">Legal</a>
+                        <a href="">Safety & privacy center</a>
+                        <a href="">privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                        <a href="">About ads</a>
+                        <a href="">Accesibility</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="eng-btn">
+                <button><i class="fa-solid fa-globe"></i>    English</button>
+            </div>
+        </div>
+    </div>
+    <!-- ......Main content starts....... -->
+     <div class="main-section">
+        <div class="top-nav">
+            <div class="prev-btn">
+                <button><i class="fa-solid fa-arrow-left"></i></button>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="nav-search">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input placeholder="What do you want to play?" class="search-input">
+            </div>
+            
+            <div class="login-btn">
+                <button class="premium" onclick="window.location.href='premium.html'">Premium </button>
+                <button class="premium" onclick="window.location.href='download.html'">Download</button>
+                <button class="seprator">|</button>
+                <button class="download"><i class="fa-solid fa-download"></i>Install App</button>
+            </div>
+            <div class="login-btn">
+                <button class="sign-up">Sign up</button>
+                <button class="login" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+            <div class="spotify-playlist">
+                <h2>Popular artists</h2>
+                <div class="card" onclick="play()">
+                    <div class="item-a">
+                        <img src="artist1.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Udit Narayan</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="item-a">
+                        <img src="artist2.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Sachin-jigar</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="item-a">
+                        <img src="artist3.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Jasleen royal</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="item-a">
+                        <img src="img4.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Karan Aujla</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="item-a">
+                        <img src="artist4.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Honey Singh</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="item-a">
+                        <img src="artist5.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Gurman Bhullar</h4>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h2>Popular album & Singles</h2>
+                <div class="card">
+                    <div class="item">
+                        <img src="img1.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Sanam Teri Kasam</h4>
+                        <p>Himesh Reshammiya,sameer Anjaan</p>
+                    </div>
+                    <div class="item">
+                        <img src="img2.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Unlimited Love Songs-Arjit Singh</h4>
+                        <p>Arjit singh</p>
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Mismatched:Season 3(soundTrack from the Netflix seires)</h4>
+                        <p>Mismatched-cast</p>
+                    </div>
+                    <div class="item">
+                        <img src="img4.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Making Memories</h4>
+                        <p>Karan Aujla,Ikky</p>
+                    </div>
+                    <div class="item">
+                        <img src="img5.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Hurry up Tomorrow</h4>
+                        <p>The Weeknd</p>
+                    </div>
+                    <div class="item">
+                        <img src="img6.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Young G.O.A.T</h4>
+                        <p>Cheema Y,Gur sidhu</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="spotify-playlist">
+                <h2>Popular Radio</h2>
+                <div class="card">
+                    <div class="item">
+                        <img src="img8.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Arijit Singh Radio</h4>
+                        <p>with Sachin-jigar,Amit Trivedi,Vishal Mishra and more</p>
+                    </div>
+                    <div class="item">
+                        <img src="img9.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Alka Yagnik Radio</h4>
+                        <p>with Abhijeet,Kumar Sanu,Jatin-Lalit and more</p>
+                    </div>
+                    <div class="item">
+                        <img src="img10.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Diljit Dosanjh Radio</h4>
+                        <p>with Karan Aujla,Subh,Sidhu Moosa Wala and more</p>
+                    </div>
+                    <div class="item">
+                        <img src="img11.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>KK Radio</h4>
+                        <p>with Pritam,Ankit Tiwari,Atif Aslam and more </p>
+                    </div>
+                    <div class="item">
+                        <img src="img12.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Shreya Ghoshal Radio</h4>
+                        <p>with A.R Rahman,vishal-Shekhar,Atif Aslam and more</p>
+                    </div>
+                    <div class="item">
+                        <img src="img13.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>A.R.Rahman Radio</h4>
+                        <p>with Anirudh Ravichander,Harris Jayraj,G.V.Prakash and more</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="spotify-playlist">
+                <h2>India's Best</h2>
+                <div class="card">
+                    <div class="item">
+                        <img src="img14.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>RADAR India<h4>
+                        <p>Most exciting artists from the indian indie scene</p>
+                    </div>
+                    <div class="item">
+                        <img src="img15.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>RAP 91</h4>
+                        <p>India's Rap scene.cover-Yo Yo honey singh</p>
+                    </div>
+                    <div class="item">
+                        <img src="img16.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Yo Hai Harryanvi!</h4>
+                        <p>Biggest Haryanvi hits from last 10 years.cover:Raju Punjabi</p>
+                    </div>
+                    <div class="item">
+                        <img src="img17.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Punjabi 101</h4>
+                        <p>Ultimate 101 Punjabi hits with shubh</p>
+                    </div>
+                    <div class="item">
+                        <img src="img18.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></i></span>
+                        </div>
+                        <h4>Tollywood Pearls</h4>
+                        <p>The finest set of telugu music from the past 10 years.cover:Hi Nanna</p>
+                    </div>
+                    <div class="item">
+                        <img src="img19.jpeg" alt="">
+                        <div class="play-btn">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Namma Karunaad</h4>
+                        <p>An exclusive collection of kannada super hits songs.cover:KGF2</p>
+                    </div>
+                </div>
+            </div>
+        <div class="footer-section">
+            <div class="footer">
+                <div class="footer-link">
+                    <div class="footer-column">
+                        <div>Company</div>
+                        <ul class="col-link">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">For the Records</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div>Communities</div>
+                        <ul class="col-link">
+                            <li><a href="">For Artists</a></li>
+                            <li><a href="">Developers</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Vendors</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div>Useful links</div>
+                        <ul class="col-link">
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Free Mobile app</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-link">
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right">&copy; 2024 Spotify AB</div>
+     </div>
+     <div class="preview">
+        <div class="text">
+            <h4>Preview of spotify</h4>
+            <p>Signup to get unlimited songs and podcasts with occasional ads.No credit card needed.</p>
+        </div>
+        <div class="button">
+            <button> Sign up Free</button>
+        </div>
+     </div>
+     <script src="spotify.js"></script>
+</body>
+</html>
